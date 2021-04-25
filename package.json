@@ -1,0 +1,47 @@
+{
+  "name": "slash-commands-handler",
+  "version": "1.0.0",
+  "author": "skydonald",
+  "description": "A simple command handler for slash commands",
+  "main": "dist/start.js",
+  "scripts": {
+    "start": "yarn run build && node .",
+    "watch": "gulp watch",
+    "format": "prettier --write src",
+    "build": "gulp build"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "dayjs": "^1.10.4",
+    "del": "^6.0.0",
+    "discord-api-types": "^0.18.0",
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^14.14.41",
+    "@types/node-fetch": "^2.5.10",
+    "@types/spotify-web-api-node": "^5.0.2",
+    "@types/ws": "^7.4.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-esbuild": "^0.7.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=7.5.2"
+  }
+}
