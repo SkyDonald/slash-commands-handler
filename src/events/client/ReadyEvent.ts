@@ -10,6 +10,6 @@ export default class ReadyEvent extends Event {
   async run(bot: Bot) {
     if (bot.env.NODE_ENV !== 'production')
       return Logger.info('Running in test environment');
-    Logger.info(`${bot.client.user?.username} is ready!`);
+    Logger.info(`${bot.client.user!.username} is ready!`);
   }
 }
